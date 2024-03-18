@@ -1,7 +1,3 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+Banco Central do Brasil. Pesquisa sobre endividamento no Sistema Financeiro Nacional (SFN), 2023. Disponível em: [link](https://www.bcb.gov.br/detalhenoticia/752/noticia). Acesso em: 17 de março de 2024.
