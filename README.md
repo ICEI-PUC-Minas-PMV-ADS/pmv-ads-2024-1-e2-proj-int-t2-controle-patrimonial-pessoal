@@ -1,23 +1,31 @@
-# TÍTULO DO PROJETO
+<h1 align="center">Economus - Financial Organizer</h1>
+<p align="center">Simplifique suas finanças e viva com mais segurança</p>
+<hr>
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`DESENVOLVIMENTO DE UMA APLICAÇÃO INTERATIVA`
 
-`SEMESTRE`
+`2024/1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+<hr>
+
+<p align="center">
+  <img src="docs\img\logo-economus.png" alt="economus-logo" width="180px" height="180px"/>
+  <br>
+  <em>Apresentamos o Economus, uma solução inovadora para gerenciar suas finanças pessoais com total segurança e tranquilidade.</em>
+  <br>
+</p>
+
+<hr>
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Rodiney Branta
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 

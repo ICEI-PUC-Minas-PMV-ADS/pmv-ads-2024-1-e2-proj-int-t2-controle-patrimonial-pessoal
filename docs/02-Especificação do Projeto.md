@@ -8,19 +8,23 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Persona 1: Marina Santos
+Idade: 28 anos
+Profissão: Estudante de Direito
+Situação Familiar: Solteira, sem filhos
+Descrição: Marina é uma estudante universitária no último ano de Direito. Ela busca uma aplicação simples e intuitiva para ajudá-la a equilibrar seus gastos com mensalidades, materiais de estudo e despesas pessoais. Como tem pouco conhecimento sobre finanças, ela valoriza a facilidade de uso e a acessibilidade da aplicação.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Persona 2: João Silva
+Idade: 35 anos
+Profissão: Engenheiro Civil
+Situação Familiar: Casado, com um filho pequeno
+Descrição: João é um engenheiro civil com conhecimento intermediário em finanças. Ele deseja uma ferramenta que o ajude a acompanhar seus gastos, planejar despesas familiares e investir para o futuro. João valoriza a confiabilidade e eficiência da aplicação.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Persona 3: Ana Silva
+Idade: 30 anos
+Profissão: Analista de Marketing
+Situação Familiar: Casada, com um filho de 3 anos
+Descrição: Ana busca equilibrar sua carreira com responsabilidades familiares. Com algum conhecimento em finanças, ela quer uma ferramenta para organizar gastos, criar orçamentos realistas e acompanhar o crescimento de seu patrimônio. Ana valoriza a praticidade e a segurança na utilização da aplicação.
 
 ## Histórias de Usuários
 
@@ -28,17 +32,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| Eu como usuário    | quero que o aplicativo seja fácil de usar e intuitivo| para facilitar o gerenciamento de minhas finanças |
+| Eu como usuário    | desejo ver um resumo de minhas finanças, incluindo despesas e renda  | para entender melhor para onde meu dinheiro está indo  |
+| Eu como usuário    | quero ver um gráfico de minhas despesas mensais | para entender melhor para onde meu dinheiro está indo|
+| Eu como usuário    | quero ver um gráfico de minha renda versus minhas despesas ao longo do tempo |para avaliar minha saúde financeira geral  |
+| Eu como usuário    | quero poder inserir os lucros dos meus últimos investimentos|para poder ver o panorama das minhas ações |
+| Eu como usuário    | quero aprender sobre os fundos de investimentos com exemplos reais | para que eu possa ampliar meus conhecimentos e tenha segurança de aplicar na prática |
+| Eu como usuário    | entender como está dividido meus gastos de forma clara | saber como organizar minha vida nos próximos meses|
+| Eu como usuário    | visualizar barras de progresso das minhas metas| entender como está o andamento dos meus objetivos|
+| Eu como usuário    | aprender o básico de educação financeira | direcionar melhor meus gastos |
+| Eu como usuário    | desejo que o aplicativo seja seguro e proteja minhas informações financeiras | para evitar fraudes e roubo de identidade                              |
+| Eu como usuário    | quero selecionar meu perfil financeiro durante o processo de criação da conta | para ter uma experiência personalizada e conteúdo adaptado às minhas necessidades  |
+| Eu como usuário    | quero receber notificações sobre vencimento de contas e metas financeiras | para não perder prazos e manter minha organização financeira |
+| Eu como usuário    | desejo poder exportar relatórios das minhas finanças | para fazer análises mais detalhadas e planejamento futuro |
+| Eu como usuário    | quero poder cadastrar diferentes fontes de renda e despesas recorrentes | para ter uma visão abrangente de minha situação financeira |
+| Eu como usuário    | desejo um sistema de suporte ao cliente eficiente | para esclarecer dúvidas e resolver problemas rapidamente |
 
 ## Requisitos
 
@@ -46,32 +54,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA | 
-|RF-002| A aplicação deve emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+| ID    | Descrição do Requisito                                               | Prioridade |
+|-------|-----------------------------------------------------------------------|------------|
+| RF-001| A aplicação deve permitir que o usuário crie uma conta                | ALTA       |
+| RF-002| A aplicação deve permitir que o usuário faça login utilizando suas credenciais | ALTA |
+| RF-003| A aplicação deve permitir que o usuário adicione suas despesas e receitas | ALTA      |
+| RF-004| A aplicação deve permitir que o usuário visualize um resumo de suas finanças, incluindo despesas e receitas | ALTA |
+| RF-005| A aplicação deve permitir que o usuário visualize gráficos de suas despesas e receitas ao longo do tempo | ALTA |
+| RF-006| A aplicação deve permitir que o usuário defina metas financeiras       | MÉDIA      |
+| RF-007| A aplicação deve enviar notificações sobre vencimento de contas e metas financeiras | MÉDIA |
+| RF-008| A aplicação deve permitir que o usuário exporte relatórios de suas finanças | BAIXA    |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID     | Descrição do Requisito                                                  | Prioridade |
+|--------|--------------------------------------------------------------------------|------------|
+| RNF-001| A aplicação deve ser responsiva                                         | ALTA       |
+| RNF-002| A aplicação deve processar requisições do usuário em no máximo 3 segundos | ALTA       |
+| RNF-003| A aplicação deve garantir a segurança dos dados do usuário               | MÉDIA      |
+| RNF-004| A aplicação deve ser compatível com os principais navegadores web 
 
 ## Restrições
 
@@ -79,25 +80,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| 01 | O projeto deve ser desenvolvido utilizando tecnologias web, sem a utilização de tecnologias desktop |
+| 02 | A aplicação deve ser compatível com os principais navegadores web, incluindo Chrome, Firefox, Safari e Edge |
+|03| O projeto deverá ser implementado utilizando a linguagem de programação C# |
+| 04 | O acesso à aplicação deve ser restrito a usuários cadastrados |
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<p align="center">
+  <img src="docs\img\diagrama-de-casos-de-uso.png" alt="economus-logo" width="180px" height="180px"/>
+</p>
