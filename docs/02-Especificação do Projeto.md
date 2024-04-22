@@ -88,5 +88,5 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 <p align="center">
-  <img src="docs\img\diagrama-de-casos-de-uso.png" alt="economus-logo" width="180px" height="180px"/>
+  <img src="img\diagrama-de-casos-de-uso.png" alt="economus-logo" width="180px" height="180px"/>
 </p>

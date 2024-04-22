@@ -21,6 +21,11 @@
 
 ## Integrantes
 
+* Breno Vinícius Oliva Flores
+* Gleiber Morinigo da Costa
+* João Pedro Oggione Cerqueira Baptista Rodrigues
+* Kenia Aparecida Caires Cardoso​​​​​​​
+* Miguel Augusto da Silva Costa
 * Rodiney Branta
 
 ## Orientador
