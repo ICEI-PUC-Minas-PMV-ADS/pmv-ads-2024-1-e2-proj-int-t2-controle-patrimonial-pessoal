@@ -1,0 +1,151 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = economus_cpp
+build_property.RootNamespace = economus_cpp
+build_property.ProjectDir = C:\Users\migue\OneDrive\Área de Trabalho\Nova pasta\economus-cpp\economus-cpp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\migue\OneDrive\Área de Trabalho\Nova pasta\economus-cpp\economus-cpp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Despesas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Despesas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Despesas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Despesas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Despesas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Investimentos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aW1lbnRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Investimentos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aW1lbnRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Investimentos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Investimentos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aW1lbnRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Investimentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aW1lbnRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Metas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Metas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Metas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Metas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Metas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Receitas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Receitas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Receitas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Receitas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Receitas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Área de Trabalho/Nova pasta/economus-cpp/economus-cpp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-upg04n5ebd
