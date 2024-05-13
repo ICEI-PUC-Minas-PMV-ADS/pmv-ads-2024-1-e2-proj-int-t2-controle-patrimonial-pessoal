@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <script src="graficos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo"><!--Logo-->
+                <img src="logo-economus.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a href="#">Orçamento</a> <!--Colocar os links das respectivas telas nos #-->
+                <a href="#">Rendimento</a><!--Colocar os links das respectivas telas nos #-->
+                <a href="#">Conta</a><!--Colocar os links das respectivas telas nos #-->
+            </div>
+        </div>
+    </header>
+    
+    <div id="patrimonioContainer">
+        <canvas id="patrimonioChart"></canvas>
+    </div>
+
+    <div id="rendimentoContainer">
+        <canvas id="rendimentoChart"></canvas>
+    </div>
+
+    <script>
+        // Patrimônio para os últimos 12 meses
+        var meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+        var valoresPatrimonio = [10000, 10500, 11000, 11500, 12000, 12500, 13000, 13500, 14000, 14500, 15000, 15500];
+        var valoresRendimento = [8000, 8500, 9000, 9500, 10000, 10500, 11000, 11500, 12000, 12500, 13000, 13500];
+
+        // Gráfico de patrimônio
+        var ctxPatrimonio = document.getElementById('patrimonioChart').getContext('2d');
+        var patrimonioChart = new Chart(ctxPatrimonio, {
+            type: 'line',
+            data: {
+                labels: meses,
+                datasets: [{
+                    label: 'Patrimônio ao longo de 12 meses',
+                    data: valoresPatrimonio,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        // Configuração do gráfico de rendimento
+        var ctxRendimento = document.getElementById('rendimentoChart').getContext('2d');
+        var rendimentoChart = new Chart(ctxRendimento, {
+            type: 'line',
+            data: {
+                labels: meses,
+                datasets: [{
+                    label: 'Rendimento ao longo de 12 meses',
+                    data: valoresRendimento,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+    
+    <div id="buttonsContainer">
+        <a href="#" class="button">Metas</a> <!--Colocar os links das respectivas telas nos #-->
+        <a href="#" class="button">Pagamentos</a> <!--Colocar os links das respectivas telas nos #-->
+        <a href="#" class="button">Despesas</a> <!--Colocar os links das respectivas telas nos #-->
+    </div>    
+</body>
+</html>
