@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.cabecalho {
+    background-color: #75dae7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #101113;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.lancamento {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lancamento h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.lancamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lancamento label {
+    text-align: left;
+}
+
+.lancamento input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.lancamento button {
+    padding: 10px 20px;
+    background-color: #101113;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #75dae7;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img class="logo" src="c:\Users\402139\Desktop\TRABALHO ADS\imagem 3.png" alt="Logo">
+        <div class="titulo">ORÇAMENTO</div>
+        <nav class="navegacao">
+            <a href="#">CONTA</a>
+            <a href="#">RENDIMENTOS</a>
+            <a href="#">METAS</a>
+        </nav>
+    
+   
+</header>
+    
+    <div class="conteudo">
+        <div class="lancamento">
+            <h2>Receitas</h2>
+            <form id="receita-form">
+                <label for="descricao-receita" class="left-align">Descrição:</label>
+                <input type="text" id="descricao-receita" required>
+                
+                
+<label for="valor-receita" class="left-align">Valor:</label>
+                <input type="number" id="valor-receita" step="0.01" required>
+                <button type="submit">Registrar Receita</button>
+            </form>
+        </div>
+
+        <div class="lancamento">
+            <h2>Despesas</h2>
+            <form id="despesa-form">
+                <label for="descricao-despesa" class="left-align">Descrição:</label>
+                <input type="text" id="descricao-despesa" required>
+                <label for="valor-despesa" class="left-align">Valor:</label>
+                <input type="number" id="valor-despesa" step="0.01" required>
+                <button type="submit">Registrar Despesa</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+   
+<footer>
+       
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

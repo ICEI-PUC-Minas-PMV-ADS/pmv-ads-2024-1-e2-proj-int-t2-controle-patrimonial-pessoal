@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "economus-cpp", "economus-cpp\economus-cpp.csproj", "{16657B27-3FFB-4613-B678-6BB6308413C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16657B27-3FFB-4613-B678-6BB6308413C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16657B27-3FFB-4613-B678-6BB6308413C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16657B27-3FFB-4613-B678-6BB6308413C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16657B27-3FFB-4613-B678-6BB6308413C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFB078F5-B232-448A-B629-556A6E6F4BF0}
+	EndGlobalSection
+EndGlobal

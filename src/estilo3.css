@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo-incial {
+    background-color: #56bac5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.logo {
+    height: 10rem;
+    width: 10rem;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teclas {
+    text-decoration: none;
+    margin: 5px;
+    padding: 25px;
+    background-color: #000000;
+    color: #fff;
+    border: solid;
+    border-radius: 5px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.caixa-esquerda {
+    width: 350px;
+    height: 100px;
+    margin-left: 25px;
+    margin-top: 70px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-size: x-large;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-direita {
+    width: 350px;
+    height: 100px;
+    margin-left: 25px;
+    margin-top: 70px;
+    background-color: #030303;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+#soma {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #4dcc5a;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sub {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #ff0000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#div{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #425eda;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.blocos-direita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blocos-esquerda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo-principal {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #dcdcdc;
+    border: 2px solid #000000;
+}
+
+.rodape {
+    background-color: #56bac5;
+    padding: 4%;
+}
