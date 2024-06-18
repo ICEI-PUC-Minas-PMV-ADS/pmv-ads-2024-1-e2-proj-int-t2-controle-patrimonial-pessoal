@@ -52,7 +52,7 @@
                             </form>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas">Hello, @User.Identity.Name</a>
+                            <a class="nav-link text-dark teclas">Olá, @ViewData["UserName"]</a>
                         </li>
                     }
                     else
@@ -61,7 +61,7 @@
                             <a class="nav-link text-dark teclas" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Account" asp-action="Register">Cadastre-se</a>
                         </li>
                     }
                 </ul>
@@ -75,6 +75,7 @@
     </div>
 
     <footer class="border-top footer text-muted rodape">
+
         <div class="container">
             &copy; 2024 - economus_cpp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

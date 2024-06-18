@@ -23,7 +23,7 @@ namespace economus_cpp.Controllers
                 var user = await _userManager.GetUserAsync(User);
                 if (user != null)
                 {
-                    ViewData["NomeDoUsuario"] = user.Name;
+                    ViewData["UserName"] = user.Name;
                 }
             }
             return View();
