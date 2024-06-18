@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - Economus - Controle Patrimonial</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/economus_cpp.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/index-styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -22,24 +21,24 @@
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1 cabecalho">
                     <li class="nav-item">
-                        <a class="nav-link text-dark teclas" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link teclas" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Metas" asp-action="Index">Metas</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Metas" asp-action="Index">Metas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Investimentos" asp-action="Index">Investimentos</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Investimentos" asp-action="Index">Investimentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Receitas" asp-action="Index">Receitas</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Receitas" asp-action="Index">Receitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a>
                         </li>
                     }
                 </ul>
@@ -48,20 +47,20 @@
                     {
                         <li class="nav-item">
                             <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="form-inline">
-                                <button type="submit" class="nav-link btn btn-link text-dark teclas" style="text-decoration: none;">Logout</button>
+                                <button type="submit" class="nav-link btn btn-link teclas" style="text-decoration: none;">Logout</button>
                             </form>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas">Olá, @ViewData["UserName"]</a>
+                            <a class="nav-link teclas">Olá, @ViewData["UserName"]</a>
                         </li>
                     }
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark teclas" asp-area="" asp-controller="Account" asp-action="Register">Cadastre-se</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Account" asp-action="Register">Cadastre-se</a>
                         </li>
                     }
                 </ul>
