@@ -1,8 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Economus - Controle Patrimonial";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+    <h1>Bem-vindo ao Economus - Controle Patrimonial</h1>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <p>Por favor, faça <a asp-controller="Account" asp-action="Login" class="teclas">Login</a> ou <a asp-controller="Account" asp-action="Register" class="teclas">Cadastre-se</a> para continuar.</p>
+    }
+    else
+    {
+        <p>Você está logado como @VieData["UserName"]. Use o menu para navegar pelo sistema.</p>
+    }
 </div>
