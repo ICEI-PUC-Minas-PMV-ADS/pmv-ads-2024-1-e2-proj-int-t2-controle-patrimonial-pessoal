@@ -223,159 +223,36 @@ namespace economus_cpp.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("economus_cpp.Models.Despesa", b =>
+            modelBuilder.Entity("economus_cpp.Models.Receipt", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("data")
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("ReceiptAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateOnly>("ReceiptDate")
                         .HasColumnType("date");
 
-                    b.Property<string>("descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("tipo")
+                    b.Property<int>("Type")
                         .HasColumnType("int");
 
-                    b.Property<int>("usuarioId")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.Property<double>("valor")
-                        .HasColumnType("float");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.HasKey("id");
-
-                    b.HasIndex("usuarioId");
-
-                    b.ToTable("Despesa");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Investimento", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<DateOnly>("dataFinal")
-                        .HasColumnType("date");
-
-                    b.Property<string>("descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("taxaImposto")
-                        .HasColumnType("float");
-
-                    b.Property<double>("taxaRendimento")
-                        .HasColumnType("float");
-
-                    b.Property<int>("tipo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("usuarioId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("valorInvestido")
-                        .HasColumnType("float");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("usuarioId");
-
-                    b.ToTable("Investimento");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Meta", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<DateOnly>("DeadLine")
-                        .HasColumnType("date");
-
-                    b.Property<string>("descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("usuarioId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("valorAplicado")
-                        .HasColumnType("float");
-
-                    b.Property<double>("valorFinal")
-                        .HasColumnType("float");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("usuarioId");
-
-                    b.ToTable("Meta");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Receita", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<DateOnly>("data")
-                        .HasColumnType("date");
-
-                    b.Property<string>("descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("tipo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("usuarioId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("valor")
-                        .HasColumnType("float");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("usuarioId");
-
-                    b.ToTable("Receita");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Usuario", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<string>("email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Usuario");
+                    b.ToTable("Receipts");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -429,48 +306,15 @@ namespace economus_cpp.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("economus_cpp.Models.Despesa", b =>
+            modelBuilder.Entity("economus_cpp.Models.Receipt", b =>
                 {
-                    b.HasOne("economus_cpp.Models.Usuario", "usuario")
+                    b.HasOne("economus_cpp.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("usuarioId")
+                        .HasForeignKey("ApplicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("usuario");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Investimento", b =>
-                {
-                    b.HasOne("economus_cpp.Models.Usuario", "usuario")
-                        .WithMany()
-                        .HasForeignKey("usuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("usuario");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Meta", b =>
-                {
-                    b.HasOne("economus_cpp.Models.Usuario", "usuario")
-                        .WithMany()
-                        .HasForeignKey("usuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("usuario");
-                });
-
-            modelBuilder.Entity("economus_cpp.Models.Receita", b =>
-                {
-                    b.HasOne("economus_cpp.Models.Usuario", "usuario")
-                        .WithMany()
-                        .HasForeignKey("usuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("usuario");
+                    b.Navigation("ApplicationUser");
                 });
 #pragma warning restore 612, 618
         }

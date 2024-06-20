@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Economus - Controle Patrimonial</title>
+    <title>@ViewData["Title"] - Economus</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/index-styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.styles.css" asp-append-version="true" />
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -26,23 +26,14 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
-                            <a class="nav-link teclas" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="Receipt" asp-action="Index">Receitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link teclas" asp-area="" asp-controller="Metas" asp-action="Index">Metas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link teclas" asp-area="" asp-controller="Investimentos" asp-action="Index">Investimentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link teclas" asp-area="" asp-controller="Receitas" asp-action="Index">Receitas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link teclas" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a>
+                            <a class="nav-link teclas" asp-area="" asp-controller="" asp-action="Index">Despesas</a>
                         </li>
                     }
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
@@ -67,13 +58,13 @@
             </div>
         </div>
     </nav>
-    <div class="container conteudo-inicial">
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted rodape">
+    <footer class="border-top footer text-muted">
 
         <div class="container">
             &copy; 2024 - economus_cpp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

@@ -7,12 +7,13 @@ namespace economus_cpp.Models
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext>options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Investimento> Investimento { get; set; }
-        public DbSet<Meta> Meta { get; set; }
-        public DbSet<Receita> Receita { get; set; }
-        public DbSet<Despesa> Despesa { get; set; }
+        public DbSet<Receipt> Receipts { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }

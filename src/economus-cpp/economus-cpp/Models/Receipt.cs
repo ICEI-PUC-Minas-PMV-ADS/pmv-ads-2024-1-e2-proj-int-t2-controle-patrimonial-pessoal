@@ -3,35 +3,36 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace economus_cpp.Models
 {
-    [Table("Receita")]
-    public class Receita
+    [Table("Receipts")]
+    public class Receipt
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
+
+        [Required]
+        public string ApplicationUserId { get; set; }
+
+        [ForeignKey("ApplicationUserId")]
+        public virtual ApplicationUser ApplicationUser { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
         [Display(Name = "Descrição")]
-        public string descricao { get; set; }
+        public string Description { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
         [Display(Name = "Tipo")]
-        public TipoReceita tipo { get; set; }
+        public ReceiptType Type { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
         [Display(Name = "Valor")]
-        public double valor { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal ReceiptAmount { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
         [Display(Name = "Data")]
-        public DateOnly data{ get; set; }
-
-        [Display(Name = "Usuario")]
-        public int usuarioId { get; set; }
-
-        [ForeignKey("usuarioId")]
-        public Usuario usuario { get; set; }
+        public DateOnly ReceiptDate { get; set; }
     }
-    public enum TipoReceita
+    public enum ReceiptType
     {
         Fixo,
         Variável

@@ -1,7 +1,11 @@
-﻿.text-center h1 {
-    margin-bottom: 3em;
+﻿.text-center {
+    text-align: center;
 }
 
-.text-center p {
-    margin-top: 1.5em;
-}
+    .text-center h1 {
+        margin-bottom: 3em;
+    }
+
+    .text-center p {
+        margin-top: 1.5em;
+    }
