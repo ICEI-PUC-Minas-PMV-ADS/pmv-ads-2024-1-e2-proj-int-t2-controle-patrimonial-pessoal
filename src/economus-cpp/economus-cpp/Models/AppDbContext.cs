@@ -10,6 +10,8 @@ namespace economus_cpp.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Receipt> Receipts { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

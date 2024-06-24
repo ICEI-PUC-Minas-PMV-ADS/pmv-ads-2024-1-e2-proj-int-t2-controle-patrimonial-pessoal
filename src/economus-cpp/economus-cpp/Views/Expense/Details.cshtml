@@ -1,4 +1,4 @@
-﻿@model economus_cpp.Models.Receipt
+﻿@model economus_cpp.Models.Expense
 
 @{
     ViewData["Title"] = "Detalhes";
@@ -23,16 +23,16 @@
             @Html.DisplayFor(model => model.Type)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReceiptAmount)
+            @Html.DisplayNameFor(model => model.ExpenseAmount)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReceiptAmount)
+            @Html.DisplayFor(model => model.ExpenseAmount)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReceiptDate)
+            @Html.DisplayNameFor(model => model.ExpenseDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReceiptDate)
+            @Html.DisplayFor(model => model.ExpenseDate)
         </dd>
     </dl>
 </div>
