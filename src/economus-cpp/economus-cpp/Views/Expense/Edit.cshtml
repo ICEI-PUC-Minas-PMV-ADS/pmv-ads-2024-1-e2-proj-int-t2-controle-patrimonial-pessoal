@@ -9,7 +9,8 @@
 <h4>Editar Despesa:</h4>
 <hr />
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
     <div class="form-group">
         <label asp-for="Type" class="control-label"></label>
         <select asp-for="Type" class="form-control" asp-items="ViewBag.ExpenseTypes"></select>
