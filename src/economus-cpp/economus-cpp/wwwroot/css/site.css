@@ -1,8 +1,25 @@
+:root {
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --text-color-teclas-hover: snow;
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+    --navbar-padding: 10px 0;
+    --text-color-nav-link-teclas: white;
+    --footer-background-color: #f8f9fa;
+    --footer-text-color: #333;
+    --footer-font-size: 0.9rem;
+    --card-background-color: #fff;
+    --card-border-color: #ddd;
+    --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --teclas-text-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, var(--font-family);
 }
 
 .logo {
@@ -11,20 +28,19 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size);
 }
 
 .navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    background-color: var(--footer-background-color);
+    border-bottom: 1px solid var(--card-border-color);
+    padding: var(--navbar-padding);
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 
 .navbar-nav {
@@ -36,12 +52,12 @@ body {
         margin-right: 10px;
     }
 
-    .navbar-nav .nav-link {
-        color: #333;
+    .navbar-nav .nav-link.teclas {
+        color: var(--text-color-nav-link-teclas);
     }
 
-        .navbar-nav .nav-link:hover {
-            color: #007bff;
+        .navbar-nav .nav-link.teclas:hover {
+            color: var(--text-color-teclas-hover);
         }
 
 .container {
@@ -51,10 +67,10 @@ body {
 }
 
 .footer {
-    background-color: #f8f9fa;
+    background-color: var(--footer-background-color);
     padding: 20px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: var(--footer-font-size);
     margin-top: 20px;
 }
 
@@ -62,39 +78,20 @@ body {
     text-decoration: none;
     margin: 5px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--teclas-text-color);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
     .teclas:hover {
-        background-color: #0056b3;
+        background-color: var(--primary-color-hover);
         color: #fff;
-    }
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-    .card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .card p {
-        font-size: 1rem;
-        line-height: 1.5;
     }
 
 .btn {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

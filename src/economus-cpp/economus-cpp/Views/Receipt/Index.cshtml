@@ -1,0 +1,53 @@
+﻿@model IEnumerable<economus_cpp.Models.Receipt>
+
+@{
+    ViewData["Title"] = "Receitas";
+}
+
+<h1>Receitas</h1>
+
+<p>
+    <a asp-action="Create">Adicionar Receita</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceiptAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceiptDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) 
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReceiptAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReceiptDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Remover</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

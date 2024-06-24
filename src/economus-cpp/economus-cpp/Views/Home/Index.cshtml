@@ -2,6 +2,10 @@
     ViewData["Title"] = "Economus - Controle Patrimonial";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/index.styles.css" />
+</head>
+
 <div class="text-center mt-5">
     <h1>Bem-vindo ao Economus - Controle Patrimonial</h1>
     @if (!User.Identity.IsAuthenticated)
@@ -10,6 +14,6 @@
     }
     else
     {
-        <p>Você está logado como @VieData["UserName"]. Use o menu para navegar pelo sistema.</p>
+        <p>Você está logado como @ViewData["UserName"]. Use o menu para navegar pelo sistema.</p>
     }
 </div>
