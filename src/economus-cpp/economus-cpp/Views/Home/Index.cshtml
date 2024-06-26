@@ -15,5 +15,11 @@
     else
     {
         <p>Você está logado como @ViewData["UserName"]. Use o menu para navegar pelo sistema.</p>
+        <div class="financial-summary">
+            <h3>Resumo Financeiro:</h3>
+            <p>Total de Receitas: <span>@ViewData["TotalReceipts"]</span></p>
+            <p>Total de Despesas: <span>@ViewData["TotalExpenses"]</span></p>
+            <p>Saldo: <span class="balance @(Convert.ToDecimal(ViewData["Balance"]) < 0 ? "negative-balance" : "")">@ViewData["Balance"]</span></p>
+        </div>
     }
 </div>

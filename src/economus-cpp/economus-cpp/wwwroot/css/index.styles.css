@@ -9,3 +9,34 @@
     .text-center p {
         margin-top: 1.5em;
     }
+
+.financial-summary {
+    margin-top: 2em;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+    .financial-summary h3 {
+        margin-bottom: 1em;
+        color: #333;
+    }
+
+    .financial-summary p {
+        margin: 0.5em 0;
+        font-size: 1.1em;
+    }
+
+    .financial-summary .balance {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #4CAF50;
+    }
+
+    .financial-summary .negative-balance {
+        color: #F44336;
+    }

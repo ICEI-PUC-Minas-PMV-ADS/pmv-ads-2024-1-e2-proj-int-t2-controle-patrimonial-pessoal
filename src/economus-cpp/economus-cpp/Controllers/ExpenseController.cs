@@ -81,21 +81,21 @@ namespace economus_cpp.Controllers
 
         public async Task<IActionResult> Edit(int? id)
         {
-            var receipt = await _context.Receipts.FindAsync(id);
-            if (receipt == null)
+            var expense = await _context.Expenses.FindAsync(id);
+            if (expense == null)
             {
                 return NotFound();
             }
 
-            ViewBag.ReceiptTypes = new SelectList(Enum.GetValues(typeof(ReceiptType)).Cast<ReceiptType>());
+            ViewBag.ExpenseTypes = new SelectList(Enum.GetValues(typeof(ExpenseType)).Cast<ExpenseType>());
 
-            var viewModel = new ReceiptViewModel
+            var viewModel = new ExpenseViewModel
             {
-                Id = receipt.Id,
-                Description = receipt.Description,
-                Type = receipt.Type,
-                ReceiptAmount = receipt.ReceiptAmount,
-                ReceiptDate = receipt.ReceiptDate
+                Id = expense.Id,
+                Description = expense.Description,
+                Type = expense.Type,
+                ExpenseAmount = expense.ExpenseAmount,
+                ExpenseDate = expense.ExpenseDate
             };
 
             return View(viewModel);
