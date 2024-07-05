@@ -1,0 +1,16 @@
+message: Please cite this software using these metadata.
+title: Economus - Financial Organizer
+authors:
+  - family-names: Branta
+    given-names: Rodiney 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Wilson da Costa
+    given-names: José
+keywords:
+  - Gestão
+  - Organização
+  - Financeira
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-controle-patrimonial-pessoal
+version: 1.0.0
+date-released: 2024-16-06
